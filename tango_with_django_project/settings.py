@@ -30,6 +30,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
+SESSION_COOKIE_AGE = 604800
 
 # Application definition
 
@@ -130,4 +132,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = MEDIA_DIR
 
 # Login 
-LOGIN_URL = '/rango/login/'
+LOGIN_URL = 'rango:login'
